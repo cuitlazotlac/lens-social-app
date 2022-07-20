@@ -69,10 +69,11 @@ export default function Home() {
         value={searchString}
       />
       <button onClick={searchForProfile}>SEARCH PROFILES</button>
-      <div>
+      <br />
+      <div className="content-card">
         {profiles.map((profile, index) => (
           <Link href={`/profile/${profile.id}`} key={index}>
-            <a>
+            <a className="content-card">
               {profile.picture ? (
                 <Image
                   src={profile.picture.original.url}
