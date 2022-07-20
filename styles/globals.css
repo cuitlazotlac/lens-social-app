@@ -9,8 +9,14 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  background-color: #3c6382;
 }
 
 * {
   box-sizing: border-box;
+  background-color: #60a3bc;
+}
+
+.content-card {
+  background-color: #3c6382;
 }
