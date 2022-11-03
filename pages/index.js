@@ -69,17 +69,15 @@ export default function Home() {
         value={searchString}
       />
       <button onClick={searchForProfile}>SEARCH PROFILES</button>
-      <br />
-      <div className="content-card">
+      <div>
         {profiles.map((profile, index) => (
           <Link href={`/profile/${profile.id}`} key={index}>
-            <a className="content-card">
+            <a>
               {profile.picture ? (
-                <Image
-                  src={profile.picture.original.url}
-                  width="52px"
-                  height="52px"
-                  alt=""
+                <img
+                  src={profile.picture?.original?.url || profile.picture.uri}
+                  alt={profile.handle}
+                  style={{ height: "60px", width: "60px" }}
                 />
               ) : (
                 <div style={blankPhotoStyle} />

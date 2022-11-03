@@ -1,31 +1,115 @@
 [
   {
     "inputs": [
-      { "internalType": "address", "name": "followNFTImpl", "type": "address" },
-      { "internalType": "address", "name": "collectNFTImpl", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "followNFTImpl",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collectNFTImpl",
+        "type": "address"
+      }
     ],
     "stateMutability": "nonpayable",
     "type": "constructor"
   },
-  { "inputs": [], "name": "CallerNotCollectNFT", "type": "error" },
-  { "inputs": [], "name": "CallerNotFollowNFT", "type": "error" },
-  { "inputs": [], "name": "CannotInitImplementation", "type": "error" },
-  { "inputs": [], "name": "EmergencyAdminCannotUnpause", "type": "error" },
-  { "inputs": [], "name": "InitParamsInvalid", "type": "error" },
-  { "inputs": [], "name": "Initialized", "type": "error" },
-  { "inputs": [], "name": "NotGovernance", "type": "error" },
-  { "inputs": [], "name": "NotGovernanceOrEmergencyAdmin", "type": "error" },
-  { "inputs": [], "name": "NotOwnerOrApproved", "type": "error" },
-  { "inputs": [], "name": "NotProfileOwner", "type": "error" },
-  { "inputs": [], "name": "NotProfileOwnerOrDispatcher", "type": "error" },
-  { "inputs": [], "name": "Paused", "type": "error" },
-  { "inputs": [], "name": "ProfileCreatorNotWhitelisted", "type": "error" },
-  { "inputs": [], "name": "ProfileImageURILengthInvalid", "type": "error" },
-  { "inputs": [], "name": "PublicationDoesNotExist", "type": "error" },
-  { "inputs": [], "name": "PublishingPaused", "type": "error" },
-  { "inputs": [], "name": "SignatureExpired", "type": "error" },
-  { "inputs": [], "name": "SignatureInvalid", "type": "error" },
-  { "inputs": [], "name": "ZeroSpender", "type": "error" },
+  {
+    "inputs": [],
+    "name": "CallerNotCollectNFT",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CallerNotFollowNFT",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CannotInitImplementation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EmergencyAdminCannotUnpause",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InitParamsInvalid",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Initialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotGovernance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotGovernanceOrEmergencyAdmin",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwnerOrApproved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotProfileOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotProfileOwnerOrDispatcher",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Paused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ProfileCreatorNotWhitelisted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ProfileImageURILengthInvalid",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PublicationDoesNotExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PublishingPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SignatureExpired",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SignatureInvalid",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroSpender",
+    "type": "error"
+  },
   {
     "anonymous": false,
     "inputs": [
@@ -103,8 +187,16 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "to", "type": "address" },
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "approve",
     "outputs": [],
@@ -113,16 +205,30 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "owner", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
     ],
     "name": "balanceOf",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "burn",
     "outputs": [],
@@ -131,13 +237,33 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
       {
         "components": [
-          { "internalType": "uint8", "name": "v", "type": "uint8" },
-          { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-          { "internalType": "bytes32", "name": "s", "type": "bytes32" },
-          { "internalType": "uint256", "name": "deadline", "type": "uint256" }
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          }
         ],
         "internalType": "struct DataTypes.EIP712Signature",
         "name": "sig",
@@ -151,12 +277,30 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "pubId", "type": "uint256" },
-      { "internalType": "bytes", "name": "data", "type": "bytes" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pubId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
     ],
     "name": "collect",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -164,15 +308,43 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "address", "name": "collector", "type": "address" },
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-          { "internalType": "uint256", "name": "pubId", "type": "uint256" },
-          { "internalType": "bytes", "name": "data", "type": "bytes" },
+          {
+            "internalType": "address",
+            "name": "collector",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pubId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -190,7 +362,13 @@
       }
     ],
     "name": "collectWithSig",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -198,8 +376,16 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-          { "internalType": "string", "name": "contentURI", "type": "string" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "contentURI",
+            "type": "string"
+          },
           {
             "internalType": "uint256",
             "name": "profileIdPointed",
@@ -242,7 +428,13 @@
       }
     ],
     "name": "comment",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -250,8 +442,16 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-          { "internalType": "string", "name": "contentURI", "type": "string" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "contentURI",
+            "type": "string"
+          },
           {
             "internalType": "uint256",
             "name": "profileIdPointed",
@@ -289,9 +489,21 @@
           },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -309,7 +521,13 @@
       }
     ],
     "name": "commentWithSig",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -317,9 +535,21 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "address", "name": "to", "type": "address" },
-          { "internalType": "string", "name": "handle", "type": "string" },
-          { "internalType": "string", "name": "imageURI", "type": "string" },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "handle",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "imageURI",
+            "type": "string"
+          },
           {
             "internalType": "address",
             "name": "followModule",
@@ -330,7 +560,11 @@
             "name": "followModuleInitData",
             "type": "bytes"
           },
-          { "internalType": "string", "name": "followNFTURI", "type": "string" }
+          {
+            "internalType": "string",
+            "name": "followNFTURI",
+            "type": "string"
+          }
         ],
         "internalType": "struct DataTypes.CreateProfileData",
         "name": "vars",
@@ -338,26 +572,62 @@
       }
     ],
     "name": "createProfile",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "wallet", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      }
     ],
     "name": "defaultProfile",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "pubId", "type": "uint256" },
-      { "internalType": "uint256", "name": "collectNFTId", "type": "uint256" },
-      { "internalType": "address", "name": "from", "type": "address" },
-      { "internalType": "address", "name": "to", "type": "address" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pubId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collectNFTId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      }
     ],
     "name": "emitCollectNFTTransferEvent",
     "outputs": [],
@@ -366,10 +636,26 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "followNFTId", "type": "uint256" },
-      { "internalType": "address", "name": "from", "type": "address" },
-      { "internalType": "address", "name": "to", "type": "address" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "followNFTId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      }
     ],
     "name": "emitFollowNFTTransferEvent",
     "outputs": [],
@@ -378,10 +664,20 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "exists",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -392,11 +688,19 @@
         "name": "profileIds",
         "type": "uint256[]"
       },
-      { "internalType": "bytes[]", "name": "datas", "type": "bytes[]" }
+      {
+        "internalType": "bytes[]",
+        "name": "datas",
+        "type": "bytes[]"
+      }
     ],
     "name": "follow",
     "outputs": [
-      { "internalType": "uint256[]", "name": "", "type": "uint256[]" }
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
     ],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -405,18 +709,38 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "address", "name": "follower", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "follower",
+            "type": "address"
+          },
           {
             "internalType": "uint256[]",
             "name": "profileIds",
             "type": "uint256[]"
           },
-          { "internalType": "bytes[]", "name": "datas", "type": "bytes[]" },
+          {
+            "internalType": "bytes[]",
+            "name": "datas",
+            "type": "bytes[]"
+          },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -435,141 +759,295 @@
     ],
     "name": "followWithSig",
     "outputs": [
-      { "internalType": "uint256[]", "name": "", "type": "uint256[]" }
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
     ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "getApproved",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "pubId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pubId",
+        "type": "uint256"
+      }
     ],
     "name": "getCollectModule",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "pubId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pubId",
+        "type": "uint256"
+      }
     ],
     "name": "getCollectNFT",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "getCollectNFTImpl",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "pubId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pubId",
+        "type": "uint256"
+      }
     ],
     "name": "getContentURI",
-    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      }
     ],
     "name": "getDispatcher",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "getDomainSeparator",
-    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      }
     ],
     "name": "getFollowModule",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      }
     ],
     "name": "getFollowNFT",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "getFollowNFTImpl",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      }
     ],
     "name": "getFollowNFTURI",
-    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "getGovernance",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      }
     ],
     "name": "getHandle",
-    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      }
     ],
     "name": "getProfile",
     "outputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "pubCount", "type": "uint256" },
+          {
+            "internalType": "uint256",
+            "name": "pubCount",
+            "type": "uint256"
+          },
           {
             "internalType": "address",
             "name": "followModule",
             "type": "address"
           },
-          { "internalType": "address", "name": "followNFT", "type": "address" },
-          { "internalType": "string", "name": "handle", "type": "string" },
-          { "internalType": "string", "name": "imageURI", "type": "string" },
-          { "internalType": "string", "name": "followNFTURI", "type": "string" }
+          {
+            "internalType": "address",
+            "name": "followNFT",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "handle",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "imageURI",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "followNFTURI",
+            "type": "string"
+          }
         ],
         "internalType": "struct DataTypes.ProfileStruct",
         "name": "",
@@ -581,17 +1059,35 @@
   },
   {
     "inputs": [
-      { "internalType": "string", "name": "handle", "type": "string" }
+      {
+        "internalType": "string",
+        "name": "handle",
+        "type": "string"
+      }
     ],
     "name": "getProfileIdByHandle",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "pubId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pubId",
+        "type": "uint256"
+      }
     ],
     "name": "getPub",
     "outputs": [
@@ -607,7 +1103,11 @@
             "name": "pubIdPointed",
             "type": "uint256"
           },
-          { "internalType": "string", "name": "contentURI", "type": "string" },
+          {
+            "internalType": "string",
+            "name": "contentURI",
+            "type": "string"
+          },
           {
             "internalType": "address",
             "name": "referenceModule",
@@ -618,7 +1118,11 @@
             "name": "collectModule",
             "type": "address"
           },
-          { "internalType": "address", "name": "collectNFT", "type": "address" }
+          {
+            "internalType": "address",
+            "name": "collectNFT",
+            "type": "address"
+          }
         ],
         "internalType": "struct DataTypes.PublicationStruct",
         "name": "",
@@ -630,45 +1134,97 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      }
     ],
     "name": "getPubCount",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "pubId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pubId",
+        "type": "uint256"
+      }
     ],
     "name": "getPubPointer",
     "outputs": [
-      { "internalType": "uint256", "name": "", "type": "uint256" },
-      { "internalType": "uint256", "name": "", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
     ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "pubId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pubId",
+        "type": "uint256"
+      }
     ],
     "name": "getPubType",
     "outputs": [
-      { "internalType": "enum DataTypes.PubType", "name": "", "type": "uint8" }
+      {
+        "internalType": "enum DataTypes.PubType",
+        "name": "",
+        "type": "uint8"
+      }
     ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "uint256", "name": "pubId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pubId",
+        "type": "uint256"
+      }
     ],
     "name": "getReferenceModule",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -687,9 +1243,21 @@
   },
   {
     "inputs": [
-      { "internalType": "string", "name": "name", "type": "string" },
-      { "internalType": "string", "name": "symbol", "type": "string" },
-      { "internalType": "address", "name": "newGovernance", "type": "address" }
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "newGovernance",
+        "type": "address"
+      }
     ],
     "name": "initialize",
     "outputs": [],
@@ -698,38 +1266,82 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "owner", "type": "address" },
-      { "internalType": "address", "name": "operator", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      }
     ],
     "name": "isApprovedForAll",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "collectModule", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "collectModule",
+        "type": "address"
+      }
     ],
     "name": "isCollectModuleWhitelisted",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "followModule", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "followModule",
+        "type": "address"
+      }
     ],
     "name": "isFollowModuleWhitelisted",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "profileCreator", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "profileCreator",
+        "type": "address"
+      }
     ],
     "name": "isProfileCreatorWhitelisted",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -742,16 +1354,32 @@
       }
     ],
     "name": "isReferenceModuleWhitelisted",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "mintTimestampOf",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -759,7 +1387,11 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
           {
             "internalType": "uint256",
             "name": "profileIdPointed",
@@ -792,7 +1424,13 @@
       }
     ],
     "name": "mirror",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -800,7 +1438,11 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
           {
             "internalType": "uint256",
             "name": "profileIdPointed",
@@ -828,9 +1470,21 @@
           },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -848,36 +1502,82 @@
       }
     ],
     "name": "mirrorWithSig",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "name",
-    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "ownerOf",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "spender", "type": "address" },
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" },
+      {
+        "internalType": "address",
+        "name": "spender",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
       {
         "components": [
-          { "internalType": "uint8", "name": "v", "type": "uint8" },
-          { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-          { "internalType": "bytes32", "name": "s", "type": "bytes32" },
-          { "internalType": "uint256", "name": "deadline", "type": "uint256" }
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          }
         ],
         "internalType": "struct DataTypes.EIP712Signature",
         "name": "sig",
@@ -891,15 +1591,43 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "owner", "type": "address" },
-      { "internalType": "address", "name": "operator", "type": "address" },
-      { "internalType": "bool", "name": "approved", "type": "bool" },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "approved",
+        "type": "bool"
+      },
       {
         "components": [
-          { "internalType": "uint8", "name": "v", "type": "uint8" },
-          { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-          { "internalType": "bytes32", "name": "s", "type": "bytes32" },
-          { "internalType": "uint256", "name": "deadline", "type": "uint256" }
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          }
         ],
         "internalType": "struct DataTypes.EIP712Signature",
         "name": "sig",
@@ -915,8 +1643,16 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-          { "internalType": "string", "name": "contentURI", "type": "string" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "contentURI",
+            "type": "string"
+          },
           {
             "internalType": "address",
             "name": "collectModule",
@@ -944,7 +1680,13 @@
       }
     ],
     "name": "post",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
@@ -952,8 +1694,16 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-          { "internalType": "string", "name": "contentURI", "type": "string" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "contentURI",
+            "type": "string"
+          },
           {
             "internalType": "address",
             "name": "collectModule",
@@ -976,9 +1726,21 @@
           },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -996,15 +1758,33 @@
       }
     ],
     "name": "postWithSig",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "from", "type": "address" },
-      { "internalType": "address", "name": "to", "type": "address" },
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "safeTransferFrom",
     "outputs": [],
@@ -1013,10 +1793,26 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "from", "type": "address" },
-      { "internalType": "address", "name": "to", "type": "address" },
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" },
-      { "internalType": "bytes", "name": "_data", "type": "bytes" }
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_data",
+        "type": "bytes"
+      }
     ],
     "name": "safeTransferFrom",
     "outputs": [],
@@ -1025,8 +1821,16 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "operator", "type": "address" },
-      { "internalType": "bool", "name": "approved", "type": "bool" }
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "approved",
+        "type": "bool"
+      }
     ],
     "name": "setApprovalForAll",
     "outputs": [],
@@ -1035,7 +1839,11 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      }
     ],
     "name": "setDefaultProfile",
     "outputs": [],
@@ -1046,13 +1854,33 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "address", "name": "wallet", "type": "address" },
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -1076,8 +1904,16 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "address", "name": "dispatcher", "type": "address" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "dispatcher",
+        "type": "address"
+      }
     ],
     "name": "setDispatcher",
     "outputs": [],
@@ -1088,7 +1924,11 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
           {
             "internalType": "address",
             "name": "dispatcher",
@@ -1096,9 +1936,21 @@
           },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -1135,8 +1987,16 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "address", "name": "followModule", "type": "address" },
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "followModule",
+        "type": "address"
+      },
       {
         "internalType": "bytes",
         "name": "followModuleInitData",
@@ -1152,7 +2012,11 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
           {
             "internalType": "address",
             "name": "followModule",
@@ -1165,9 +2029,21 @@
           },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -1191,8 +2067,16 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "string", "name": "followNFTURI", "type": "string" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "followNFTURI",
+        "type": "string"
+      }
     ],
     "name": "setFollowNFTURI",
     "outputs": [],
@@ -1203,7 +2087,11 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
           {
             "internalType": "string",
             "name": "followNFTURI",
@@ -1211,9 +2099,21 @@
           },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -1237,7 +2137,11 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "newGovernance", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "newGovernance",
+        "type": "address"
+      }
     ],
     "name": "setGovernance",
     "outputs": [],
@@ -1246,8 +2150,16 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-      { "internalType": "string", "name": "imageURI", "type": "string" }
+      {
+        "internalType": "uint256",
+        "name": "profileId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "imageURI",
+        "type": "string"
+      }
     ],
     "name": "setProfileImageURI",
     "outputs": [],
@@ -1258,13 +2170,33 @@
     "inputs": [
       {
         "components": [
-          { "internalType": "uint256", "name": "profileId", "type": "uint256" },
-          { "internalType": "string", "name": "imageURI", "type": "string" },
+          {
+            "internalType": "uint256",
+            "name": "profileId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "imageURI",
+            "type": "string"
+          },
           {
             "components": [
-              { "internalType": "uint8", "name": "v", "type": "uint8" },
-              { "internalType": "bytes32", "name": "r", "type": "bytes32" },
-              { "internalType": "bytes32", "name": "s", "type": "bytes32" },
+              {
+                "internalType": "uint8",
+                "name": "v",
+                "type": "uint8"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "r",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "s",
+                "type": "bytes32"
+              },
               {
                 "internalType": "uint256",
                 "name": "deadline",
@@ -1300,46 +2232,92 @@
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "name": "sigNonces",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "bytes4", "name": "interfaceId", "type": "bytes4" }
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
     ],
     "name": "supportsInterface",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "symbol",
-    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "index", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
     ],
     "name": "tokenByIndex",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "tokenDataOf",
     "outputs": [
       {
         "components": [
-          { "internalType": "address", "name": "owner", "type": "address" },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
           {
             "internalType": "uint96",
             "name": "mintTimestamp",
@@ -1356,35 +2334,77 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "owner", "type": "address" },
-      { "internalType": "uint256", "name": "index", "type": "uint256" }
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
     ],
     "name": "tokenOfOwnerByIndex",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "tokenURI",
-    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "totalSupply",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "from", "type": "address" },
-      { "internalType": "address", "name": "to", "type": "address" },
-      { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
     ],
     "name": "transferFrom",
     "outputs": [],
@@ -1393,8 +2413,16 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "collectModule", "type": "address" },
-      { "internalType": "bool", "name": "whitelist", "type": "bool" }
+      {
+        "internalType": "address",
+        "name": "collectModule",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "whitelist",
+        "type": "bool"
+      }
     ],
     "name": "whitelistCollectModule",
     "outputs": [],
@@ -1403,8 +2431,16 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "followModule", "type": "address" },
-      { "internalType": "bool", "name": "whitelist", "type": "bool" }
+      {
+        "internalType": "address",
+        "name": "followModule",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "whitelist",
+        "type": "bool"
+      }
     ],
     "name": "whitelistFollowModule",
     "outputs": [],
@@ -1418,7 +2454,11 @@
         "name": "profileCreator",
         "type": "address"
       },
-      { "internalType": "bool", "name": "whitelist", "type": "bool" }
+      {
+        "internalType": "bool",
+        "name": "whitelist",
+        "type": "bool"
+      }
     ],
     "name": "whitelistProfileCreator",
     "outputs": [],
@@ -1432,7 +2472,11 @@
         "name": "referenceModule",
         "type": "address"
       },
-      { "internalType": "bool", "name": "whitelist", "type": "bool" }
+      {
+        "internalType": "bool",
+        "name": "whitelist",
+        "type": "bool"
+      }
     ],
     "name": "whitelistReferenceModule",
     "outputs": [],
