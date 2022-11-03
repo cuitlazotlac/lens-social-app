@@ -5,7 +5,7 @@ import Image from "next/image";
 import { client, getPublications, getProfiles } from "../../api";
 import ABI from "../../abi.json";
 
-const CONTRACT_ADDRESS = "0xDb46d1Dc155634FbC732f92E853b10B288AD5a1d";
+const CONTRACT_ADDRESS = "0xDb46d1Dc155634FbC732f92E853b10B288AD5a1d ";
 
 export default function Profile() {
   const [profile, setProfile] = useState();
