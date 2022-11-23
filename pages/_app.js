@@ -25,7 +25,13 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     refreshAuthToken();
     async function checkConnection() {
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      // const provider = new ethers.providers.Web3Provider(window.ethereum);
+
+      const provider =
+        window.ethereum != null
+          ? new ethers.providers.Web3Provider(window.ethereum)
+          : ethers.providers.getDefaultProvider();
+
       const addresses = await provider.listAccounts();
       if (addresses.length) {
         setConnected(true);
