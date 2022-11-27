@@ -7,6 +7,9 @@ import {
   getPublications,
   searchProfiles,
 } from "../api";
+import { css } from "@emotion/css";
+
+import { Button, SearchInput, Placeholders } from "../components";
 
 export default function Home() {
   const [profiles, setProfiles] = useState([]);
@@ -59,16 +62,25 @@ export default function Home() {
     }
   }
 
+  function handleKeyDown(e) {
+    if (e.key === "Enter") {
+      searchForProfile();
+    }
+  }
+
   console.log({ profiles });
 
   return (
     <div>
-      <input
-        placeholder="Search"
-        onChange={(e) => setSearchString(e.target.value)}
-        value={searchString}
-      />
-      <button onClick={searchForProfile}>SEARCH PROFILES</button>
+      <div className={searchContainerStyle}>
+        <SearchInput
+          placeholder="Search"
+          onChange={(e) => setSearchString(e.target.value)}
+          value={searchString}
+          onKeyDown={handleKeyDown}
+        />
+        <Button onClick={searchForProfile} buttonText="SEARCH PROFILES" />
+      </div>{" "}
       <div>
         {profiles.map((profile, index) => (
           <Link href={`/profile/${profile.id}`} key={index}>
@@ -91,6 +103,10 @@ export default function Home() {
     </div>
   );
 }
+
+const searchContainerStyle = css`
+  padding: 40px 0px 30px;
+`;
 
 const blankPhotoStyle = {
   width: "52px",
