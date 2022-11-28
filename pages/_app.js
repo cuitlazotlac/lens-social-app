@@ -14,6 +14,7 @@ import {
 import { parseJwt, refreshAuthToken } from "../utils";
 import { AppContext } from "../context";
 import Modal from "../components/CreatePostModal";
+import { BRAND_COLOR } from "../theme";
 
 function MyApp({ Component, pageProps }) {
   const [connected, setConnected] = useState(true);
@@ -226,18 +227,18 @@ const buttonStyle = css`
   outline: none;
   margin-left: 15px;
   background-color: black;
-  color: #340036;
+  color: white;
   padding: 13px;
   border-radius: 25px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
-  background-color: rgb(249, 92, 255);
+  background-color: rgb(${BRAND_COLOR});
   transition: all 0.35s;
   width: 160px;
   letter-spacing: 0.75px;
   &:hover {
-    background-color: rgba(249, 92, 255, 0.75);
+    background-color: rgba(${BRAND_COLOR}, 0.75);
   }
 `;
 

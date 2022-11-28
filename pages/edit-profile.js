@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { ethers } from "ethers";
 import { AppContext } from "../context";
 import { css } from "@emotion/css";
-import { PINK } from "../theme";
+import { BRAND_COLOR } from "../theme";
 import { Button } from "../components";
 import { v4 as uuid } from "uuid";
 import { create } from "ipfs-http-client";
@@ -166,7 +166,7 @@ const inputStyle = css`
   margin-top: 10px;
   margin-bottom: 30px;
   &:focus {
-    border-color: rgb(${PINK});
+    border-color: rgb(${BRAND_COLOR});
   }
 `;
 
