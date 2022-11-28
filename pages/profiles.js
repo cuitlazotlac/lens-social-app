@@ -10,6 +10,7 @@ import { trimString, generateRandomColor } from "../utils";
 import { Button, SearchInput, Placeholders } from "../components";
 import Image from "next/image";
 import Link from "next/link";
+import { BRAND_COLOR } from "../theme";
 
 export default function Home() {
   const [profiles, setProfiles] = useState([]);
@@ -176,7 +177,7 @@ const nameStyle = css`
 
 const handleStyle = css`
   margin: 0px 0px 5px;
-  color: #b900c9;
+  color: rgb(${BRAND_COLOR});
 `;
 
 const inputStyle = css`

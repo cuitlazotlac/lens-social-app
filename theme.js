@@ -1,1 +1,1 @@
-export const PINK = "249, 92, 255";
+export const BRAND_COLOR = "48, 51, 107";
