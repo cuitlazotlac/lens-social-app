@@ -137,6 +137,7 @@ function MyApp({ Component, pageProps }) {
                 </Link>
               )}
             </div>
+
             <div className={buttonContainerStyle}>
               {!connected && (
                 <button className={buttonStyle} onClick={signIn}>
@@ -164,7 +165,7 @@ function MyApp({ Component, pageProps }) {
 }
 
 const appLayoutStyle = css`
-  width: 900px;
+  width: 1800px;
   margin: 0 auto;
   padding: 78px 0px 50px;
 `;
@@ -172,12 +173,12 @@ const appLayoutStyle = css`
 const linkTextStyle = css`
   margin-right: 40px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 17px;
 `;
 
 const iconStyle = css`
-  height: 35px;
-  margin-right: 40px;
+  height: 70px;
+  margin-right: 100px;
 `;
 
 const modalButtonStyle = css`
@@ -194,17 +195,16 @@ const createPostStyle = css`
 
 const navStyle = css`
   background-color: white;
-  padding: 15px 30px;
+  padding: 10px 15px;
   display: flex;
   position: fixed;
   width: 100%;
-  background-color: white;
   z-index: 1;
   border-bottom: 1px solid #ededed;
 `;
 
 const navContainerStyle = css`
-  width: 900px;
+  width: 2000px;
   margin: 0 auto;
   display: flex;
 `;
