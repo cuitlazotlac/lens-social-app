@@ -12,10 +12,10 @@ export function Button({ buttonText, onClick }) {
 const buttonStyle = css`
   border: none;
   outline: none;
-  margin-left: 15px;
   color: white;
-  padding: 17px;
-  border-radius: 25px;
+  margin-left: 15px;
+  padding: 12px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;

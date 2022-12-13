@@ -129,6 +129,11 @@ function Navbar({ Component, pageProps }) {
                   <p className={linkTextStyle}>Explore Profiles</p>
                 </a>
               </Link>
+              <Link href="/">
+                <a>
+                  <p className={linkTextStyle}>About</p>
+                </a>
+              </Link>
               {userProfile && (
                 <Link href={`/profile/${userProfile.id}`}>
                   <a>
@@ -185,6 +190,8 @@ const modalButtonStyle = css`
   background-color: transparent;
   outline: none;
   border: none;
+  padding: 12px;
+  border-radius: 10px;
   cursor: pointer;
 `;
 
@@ -225,11 +232,11 @@ const buttonContainerStyle = css`
 const buttonStyle = css`
   border: none;
   outline: none;
-  margin-left: 15px;
+  margin-left: 12px;
   background-color: black;
   color: white;
   padding: 13px;
-  border-radius: 25px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
