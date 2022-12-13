@@ -24,6 +24,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  preset: ["next/babel"],
   images: {
     domains: [
       "ipfs.infura.io",

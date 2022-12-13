@@ -14,6 +14,7 @@ import { getSigner } from "../../utils";
 import ReactMarkdown from "react-markdown";
 
 import LENSHUB from "../../abi/lenshub";
+import { ProfileMenu } from "../../components/ProfileMenu";
 
 export default function Profile() {
   const [profile, setProfile] = useState();
@@ -114,6 +115,7 @@ export default function Profile() {
   if (!profile) return null;
 
   const profileOwner = userProfile?.id === id;
+  console.log(profile);
 
   return (
     <div className={containerStyle}>
@@ -136,6 +138,20 @@ export default function Profile() {
           <h3 className={nameStyle}>{profile.name}</h3>
           <p className={handleStyle}>{profile.handle}</p>
           <p className={bioStyle}>{profile.bio}</p>
+          <p>Total Followers :</p>
+          <p className={bioStyle}>{profile.stats.totalFollowers}</p>
+          <p>Total Following :</p>
+          <p className={bioStyle}>{profile.stats.totalFollowing}</p>
+          <p>--------------------------</p>
+          <p>
+            <span>ID : {profile.id}</span>
+          </p>
+          <p>
+            <span>ID : {profile.attributes.value}</span>
+          </p>
+          <p>
+            <span>ID : {profile.id}</span>
+          </p>
           <div>
             {userAddress && !profileOwner ? (
               doesFollow ? (
@@ -158,7 +174,7 @@ export default function Profile() {
 
         <div className={rightColumnStyle}>
           <div className={tabSelectStyle}>
-            Placeholder for the different section/tabs
+            <ProfileMenu />
           </div>
           <h3 className={postHeaderStyle}>Posts</h3>
           {publications.map((pub, index) => (
@@ -264,7 +280,8 @@ const rightColumnStyle = css`
 `;
 
 const leftWrapperStyle = css`
-  margin-left: 40px;
+  margin-left: 45px;
+  max-width: 23%;
 `;
 
 const containerStyle = css`
